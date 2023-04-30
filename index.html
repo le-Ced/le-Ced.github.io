@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel A &#160; ━ &#160; Acceuil</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <a href="#"><img src="ressources/logo.png"></a>
+            <li><a href="#">Accomodation</a></li>
+            <li><a href="#">Reservation</a></li>
+        </ul>
+    </header>
+
+    <section class="home">
+        <div class="shadow-bottom">
+
+        </div>
+    </section>
+
+    <section class="main-container">
+        <div class="container">
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top"> <!-- HAUT DU FOOTER -->
+                <div>
+                    <h6 class="footer-title">Contact</h6>
+                    <ul class="footer-list">
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Mail</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Accès</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Presse</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">0490 541030</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="footer-title">Actualité</h6>
+                    <ul class="footer-list">
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Art</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Food</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Nature</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Lifestyle</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="footer-title">Engagement</h6>
+                    <ul class="footer-list">
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Le Hameau durable</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Restaurants de qualité</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Valeurs Parc Naturel Régional</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="footer-title">Le Hameau</h6>
+                    <ul class="footer-list">
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">La table du Hameau</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">La galerie du Hameau</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Le comptoir du Hameau</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Le camion bleu du Hameau</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom"> <!-- BAS DU FOOTER -->
+                <span class="copyright">&copy; 2020 Hameau des Baux</span>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a href="https://www.instagram.com/hameaudesbaux/" class="footer-list-link" target="_blank">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="" class="footer-list-link">
+                            <i class="ri-mail-send-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    const header = document.querySelector("header");
+    const section = document.querySelector("section");
+
+    window.addEventListener("scroll", () => {
+        header.classList.toggle("change", window.scrollY > 0);
+        section.classList.toggle("change", window.scrollY > 0);
+    });
+    //                                   window.outerHeight/2
+</script>
+
+</html>
