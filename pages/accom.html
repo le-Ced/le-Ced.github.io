@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hebergement</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/accom.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body style="background-image: url(../ressources/accom.png);">
+    <header>
+        <div class="left">
+            <a onclick="MenuSwitch()">
+                <div class="menu">
+                    <div class="icon">
+                        <hr>
+                        <hr>
+                        <hr>
+                    </div>
+                    <p id="change">MENU</p>
+                </div>
+            </a>
+            <div class="left-right">
+                <a href="#rooms-deluxe+">Chambres deluxe +</a>
+                <a href="#rooms-deluxe">Chambres deluxe</a>
+                <a href="#rooms-first">Chambres première</a>
+            </div>
+        </div>
+        <div class="middle">
+            <a href="#">
+                <svg id="eaBRS6zvuVX1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 80 80" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                    <defs>
+                        <linearGradient id="eaBRS6zvuVX3-stroke" x1="0.469156" y1="-0.151554" x2="0.490935"
+                            y2="1.142091" spreadMethod="pad" gradientUnits="objectBoundingBox"
+                            gradientTransform="translate(0 0)">
+                            <stop id="eaBRS6zvuVX3-stroke-0" offset="1%" stop-color="#c19c67" />
+                            <stop id="eaBRS6zvuVX3-stroke-1" offset="100%" stop-color="#000" />
+                        </linearGradient>
+                        <linearGradient id="eaBRS6zvuVX4-stroke" x1="0.469156" y1="-0.151554" x2="0.490935"
+                            y2="1.142091" spreadMethod="pad" gradientUnits="objectBoundingBox"
+                            gradientTransform="translate(0 0)">
+                            <stop id="eaBRS6zvuVX4-stroke-0" offset="1%" stop-color="#c19c67" />
+                            <stop id="eaBRS6zvuVX4-stroke-1" offset="100%" stop-color="#000" />
+                        </linearGradient>
+                        <linearGradient id="eaBRS6zvuVX5-stroke" x1="0.469156" y1="-0.151554" x2="0.490935"
+                            y2="1.142091" spreadMethod="pad" gradientUnits="objectBoundingBox"
+                            gradientTransform="translate(0 0)">
+                            <stop id="eaBRS6zvuVX5-stroke-0" offset="1%" stop-color="#c19c67" />
+                            <stop id="eaBRS6zvuVX5-stroke-1" offset="100%" stop-color="#000" />
+                        </linearGradient>
+                    </defs>
+                    <ellipse rx="39" ry="39" transform="translate(40 40)" fill="#aaaaaa33" stroke-width="1"
+                        stroke="#111" />
+                    <path
+                        d="M33.726014,7.875855C26.681055,29.153699,36.197815,67.063436,40,66.210578c3.286346-2.117213,14.025016-34.975799,6.273986-58.334724l-12.547972.000001Z"
+                        transform="translate(0 0.000001)" fill="none" stroke="url(#eaBRS6zvuVX3-stroke)"
+                        stroke-width="2" stroke-linejoin="bevel" />
+                    <path d="M30,14c-10,17-2,50,6,57c5-6,12-50-6-57Z" fill="none" stroke="url(#eaBRS6zvuVX4-stroke)"
+                        stroke-width="2" stroke-linejoin="bevel" />
+                    <path d="M50,14c-17,2-12,50-6,57c5-10,17-40,6-57Z" transform="translate(.000001 0)" fill="none"
+                        stroke="url(#eaBRS6zvuVX5-stroke)" stroke-width="2" stroke-linejoin="bevel" />
+                </svg>
+            </a>
+        </div>
+        <div class="right">
+            <div class="right-left">
+                <a href="#suites-deluxe">Suites deluxe</a>
+                <a href="#suites-cara">Suites caractère</a>
+                <a href="#suites-sign">Suites signature</a>
+            </div>
+            <div class="right-right">
+                <div class="book">
+                    <a>Réserver</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="menu-container">
+        <div class="nav-container">
+            <div class="nav-block">
+                <a class="one-choice" href="../index.html">Le Hameau</a>
+                <a onclick="AccomSelect()" class="active">Hebergement</a>
+                <div class="nav-accom">
+                    <a href="#rooms-first">Chambres première</a>
+                    <a href="#rooms-deluxe">Chambres deluxe</a>
+                    <a href="#rooms-deluxe+">Chambres deluxe +</a>
+                    <a href="#suites-deluxe">Suites deluxe</a>
+                    <a href="#suites-cara">Suites caractère</a>
+                    <a href="#suites-sign">Suites signature</a>
+                </div>
+                <a onclick="GallerySelect()">Galerie</a>
+                <div class="nav-gallery">
+                    <a href="gallery.html#ringlet">Philippe Ringlet</a>
+                    <a href="gallery.html#rovedo">Elisabeth Rovedo</a>
+                    <a href="gallery.html#alonso">Alfredo Alonso</a>
+                </div>
+                <a class="one-choice" href="resto.html" onclick="RestoSelect()">Restaurant</a>
+                <a class="one-choice" href="activity.html" onclick="ActivitySelect()">Activités</a>
+            </div>
+        </div>
+        <div class="menu-bg" onclick="MenuSwitch()"></div>
+    </div>
+
+    <div class="main-container">
+        <section class="home">
+            <div class="text">
+                <h1>Séjourner</h1>
+                <h3>21 suites & chambres</h3>
+                <p>Entre 35 et 65m2, nos 21 suites et chambres sont spacieuses, élégantes et ouvertes sur la nature.
+                    Toutes sont uniques, l'ameublement et la décoration ont fait l'objet d'un choix qui éveille les sens
+                    et suscite l'émotion. Esprit de métissage et d'ouverture sur le monde, le mobilier témoigne d'une
+                    délicate harmonie entre mémoire et modernité, de part son mélange élégant de pièces de collection,
+                    de créations d’éditeurs d’aujourd’hui et d’œuvres d’art de notre collection. La plupart des chambres
+                    et toutes les suites disposent d’une terrasse privée et arborée pour se ressourcer en toute
+                    intimité.</p>
+            </div>
+            <span id="rooms-first"></span>
+        </section>
+        <section class="rooms-first">
+            <div class="rooms-first-container">
+                <div class="title">
+                    <h1>La Machotte</h1>
+                    <h3>Chambres première</h3>
+                </div>
+                <div class="rooms-first-slider">
+                    <a onclick="plusSlides(-1, 0)">&#9654;</a>
+                    <div class="mySlides1">
+                        <img src="../ressources/rooms-first/machotte1.jpg">
+                    </div>
+                    <div class="mySlides1">
+                        <img src="../ressources/rooms-first/machotte2.jpg">
+                    </div>
+                    <div class="mySlides1">
+                        <img src="../ressources/rooms-first/machotte3.jpg">
+                    </div>
+                    <div class="mySlides1">
+                        <img src="../ressources/rooms-first/machotte4.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="rooms-first-container">
+                <div class="title">
+                    <h1>La Bugadière</h1>
+                    <h3>Chambres première</h3>
+                </div>
+                <div class="rooms-first-slider">
+                    <a onclick="plusSlides(-1, 1)">&#9654;</a>
+                    <div class="mySlides2">
+                        <img src="../ressources/rooms-first/bugadiere1.jpg">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="../ressources/rooms-first/bugadiere2.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="rooms-first-container">
+                <div class="title">
+                    <h1>La Tégula</h1>
+                    <h3>Chambres première</h3>
+                </div>
+                <div class="rooms-first-slider">
+                    <a onclick="plusSlides(-1, 2)">&#9654;</a>
+                    <div class="mySlides3">
+                        <img src="../ressources/rooms-first/tegula1.jpg">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="../ressources/rooms-first/tegula2.jpg">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="../ressources/rooms-first/tegula3.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="left-container">
+                <h1>Chambres première</h1>
+                <p>Des chambres à la fois intimes et spacieuses qui surplombent le domaine.<br>Vous serez séduit par leur ambiance cossue et chaleureuse.</p>
+                <ul>
+                    <li>Wifi - Climatisation - Coffre-fort</li>
+                    <li>Téléviseur - Téléphone - Minibar</li>
+                    <li>Peignoirs, tongs & chapeaux de paille</li>
+                    <li>Produits d'accueil Végétalement Provence</li>
+                </ul>
+                <button>Réservation</button>
+            </div>
+            <div class="right-container">
+                <h1>Chambres deluxe</h1>
+                <p>Situées en étage et surplombant le domaine, les chambres Deluxe bénéficient de belles proportions et de grandes fenêtres avec vues sur les champs d'oliviers, la place du Hameau ou encore la plaine de la Crau.</p>
+                <ul>
+                    <li>Wifi - Climatisation - Coffre-fort</li>
+                    <li>Téléviseur - Téléphone - Minibar</li>
+                    <li>Peignoirs, tongs & chapeaux de paille</li>
+                    <li>Produits d'accueil Végétalement Provence</li>
+                </ul>
+                <button>Réservation</button>
+                <span id="rooms-deluxe"></span>
+            </div>
+        </section>
+
+        <section class="rooms-deluxe">
+            <div class="rooms-deluxe-container">
+                <div class="title">
+                    <h1>La Génoise</h1>
+                    <h3>Chambres deluxe</h3>
+                </div>
+                <div class="rooms-deluxe-slider">
+                    <a onclick="plusSlides(-1, 3)">&#9654;</a>
+                    <div class="mySlides4">
+                        <img src="../ressources/rooms-deluxe/genoise1.jpg">
+                    </div>
+                    <div class="mySlides4">
+                        <img src="../ressources/rooms-deluxe/genoise2.jpg">
+                    </div>
+                    <div class="mySlides4">
+                        <img src="../ressources/rooms-deluxe/genoise3.jpg">
+                    </div>
+                    <div class="mySlides4">
+                        <img src="../ressources/rooms-deluxe/genoise4.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="rooms-deluxe-container">
+                <div class="title">
+                    <h1>La Fenière</h1>
+                    <h3>Chambres deluxe</h3>
+                </div>
+                <div class="rooms-deluxe-slider">
+                    <a onclick="plusSlides(-1, 4)">&#9654;</a>
+                    <div class="mySlides5">
+                        <img src="../ressources/rooms-deluxe/feniere1.jpg">
+                    </div>
+                    <div class="mySlides5">
+                        <img src="../ressources/rooms-deluxe/feniere2.jpg">
+                    </div>
+                    <div class="mySlides5">
+                        <img src="../ressources/rooms-deluxe/feniere3.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="rooms-deluxe-container">
+                <div class="title">
+                    <h1>L'École</h1>
+                    <h3>Chambres deluxe</h3>
+                </div>
+                <div class="rooms-deluxe-slider">
+                    <a onclick="plusSlides(-1, 5)">&#9654;</a>
+                    <div class="mySlides6">
+                        <img src="../ressources/rooms-deluxe/ecole1.jpg">
+                    </div>
+                    <div class="mySlides6">
+                        <img src="../ressources/rooms-deluxe/ecole2.jpg">
+                    </div>
+                    <div class="mySlides6">
+                        <img src="../ressources/rooms-deluxe/ecole3.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rooms-deluxe+" id="rooms-deluxe+">
+
+        </section>
+        <section class="suites-deluxe" id="suites-deluxe">
+
+        </section>
+        <section class="suites-cara" id="suites-cara">
+
+        </section>
+        <section class="suites-sign" id="suites-sign">
+
+        </section>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="top-container">
+                <div class="contact">
+                    <h1>Contact</h1>
+                    <a href="#footer">Mail</a>
+                    <a href="#footer">Accès</a>
+                    <a href="#footer">Presse</a>
+                    <a href="#footer">+33 4 90 54 10 30</a>
+                </div>
+                <div class="actualite">
+                    <h1>Actualité</h1>
+                    <a href="#footer">Art</a>
+                    <a href="#footer">Food</a>
+                    <a href="#footer">Nature</a>
+                    <a href="#footer">Lifestyle</a>
+                </div>
+                <div class="engagement">
+                    <h1>Engagement</h1>
+                    <a href="#footer">Le Hameau durable</a>
+                    <a href="#footer">Restaurant de qualité</a>
+                    <a href="#footer">Valeurs Parc Naturel Régional</a>
+                </div>
+                <div class="leHameau">
+                    <h1>Le Hameau</h1>
+                    <a href="../index.html#table">La table du Hameau</a>
+                    <a href="../index.html#galerie">La galerie du Hameau</a>
+                    <a href="../index.html#comptoir">Le comptoir du Hameau</a>
+                    <a href="../index.html#camion">Le camion du Hameau</a>
+                </div>
+            </div>
+            <hr>
+            <div class="bottom-container">
+                <div class="left">
+                    <p>&copy; 2020 Hameau des Baux</p>
+                </div>
+                <div class="right">
+                    <a href="" class="footer-list-link">
+                        <i class="ri-mail-send-line"></i>
+                    </a>
+                    <a href="https://www.instagram.com/hameaudesbaux/" class="footer-list-link" target="_blank">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="../script/script.js"></script>
+
+</html>

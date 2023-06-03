@@ -1,0 +1,140 @@
+h1 {
+    font-family: 'Exo', sans-serif;
+    font-size: 2rem;
+    color: #111;
+}
+
+h3 {
+    font-family: 'Dancing Script';
+    font-size: 1.5rem;
+    color: #ab8755;
+}
+
+.main-container .home .text h1 {
+    line-height: 0rem;
+}
+
+.main-container .home .text h3 {
+    line-height: 6rem;
+}
+
+.main-container .home .text p {
+    width: 50%;
+    color: #ccc;
+    font-size: .8rem;
+}
+
+.main-container section {
+    height: 60vh;
+    width: 100%;
+    text-align: center;
+    padding: 5vh 0;
+}
+
+.main-container section:nth-child(even) {
+    background: #eee;
+    height: 100%;
+}
+
+.main-container section:nth-child(odd) {
+    background: #ccc;
+    height: 100%;
+}
+
+.main-container section.home {
+    background: none;
+    height: 90vh;
+}
+
+.main-container section div a {
+    cursor: pointer;
+    background: #111;
+    border-radius: 100%;
+    color: #eee;
+    font-size: .8rem;
+    padding: .8rem;
+    height: min-content;
+    z-index: 15;
+}
+
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6 {
+    transition: opacity .4s;
+}
+
+.main-container .rooms-first,
+.main-container .rooms-deluxe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-container section .rooms-first-container,
+.main-container section .rooms-deluxe-container {
+    /* background: #033; */
+    width: 30%;
+}
+
+.main-container section .rooms-first-slider,
+.main-container section .rooms-deluxe-slider {
+    /* background: #0aa; */
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.main-container section .rooms-first-container img,
+.main-container section .rooms-deluxe-container img {
+    position: absolute;
+    top: 17px;
+    left: calc(50% - 100px);
+    height: auto;
+    width: 200px;
+    border-radius: 4px;
+}
+
+.main-container section .rooms-first-container a,
+.main-container section .rooms-deluxe-container a {
+    position: relative;
+    left: -100px;
+}
+
+section.about {
+    display: flex;
+    flex-direction: row;
+    padding: 0 64px;
+}
+
+section.about div {
+    width: 100%;
+    padding: 32px 0;
+}
+
+section.about div h1 {
+    margin-bottom: 16px;
+}
+
+section.about div p {
+    margin-bottom: 8px;
+}
+
+section.about div ul {
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+section.about div button {
+    font-family: 'Clashdisplay', sans-serif;
+    font-size: .9rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #eee;
+    border-radius: 4px;
+    border: none;
+    background: #111;
+    padding: 8px;
+    cursor: pointer;
+}

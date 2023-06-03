@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="style/style.css">
+    <title>Activités</title>
+    <link rel="stylesheet" href="../style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
-<!-- Le comptoir du Hameau -->
-<!-- Le camion bleu du Hameau -->
 
-<body style="background-image: url(ressources/backgroundLight.jpg);">
+<body style="background-image: url(../ressources/gallery.png);">
     <header>
         <div class="left">
             <a onclick="MenuSwitch()">
@@ -26,8 +24,8 @@
                 </div>
             </a>
             <div class="left-right">
-                <a href="#galerie">La galerie du Hameau</a>
-                <a href="#table">La table du Hameau</a>
+                <a href="#ringlet">Philippe Ringlet</a>
+                <a href="#rovedo">Elisabeth Rovedo</a>
             </div>
         </div>
         <div class="middle">
@@ -69,8 +67,8 @@
         </div>
         <div class="right">
             <div class="right-left">
-                <a href="#comptoir">Le comptoir du Hameau</a>
-                <a href="#camion">Le camion bleu du Hameau</a>
+                <a href="#alonso">Alfredo Alonso</a>
+                <a href="#hameau">La galerie du Hameau</a>
             </div>
             <div class="right-right">
                 <div class="book">
@@ -82,102 +80,29 @@
     <div class="menu-container">
         <div class="nav-container">
             <div class="nav-block">
-                <a class="one-choice active" href="#">Le Hameau</a>
+                <a class="one-choice" href="../index.html">Le Hameau</a>
                 <a onclick="AccomSelect()">Hebergement</a>
                 <div class="nav-accom">
-                    <a href="pages/accom.html#rooms-first">Chambres première</a>
-                    <a href="pages/accom.html#rooms-deluxe">Chambres deluxe</a>
-                    <a href="pages/accom.html#rooms-deluxe+">Chambres deluxe +</a>
-                    <a href="pages/accom.html#suites-deluxe">Suites deluxe</a>
-                    <a href="pages/accom.html#suites-cara">Suites caractère</a>
-                    <a href="pages/accom.html#suites-sign">Suites signature</a>
+                    <a href="accom.html#rooms-first">Chambres première</a>
+                    <a href="accom.html#rooms-deluxe">Chambres deluxe</a>
+                    <a href="accom.html#rooms-deluxe+">Chambres deluxe +</a>
+                    <a href="accom.html#suites-deluxe">Suites deluxe</a>
+                    <a href="accom.html#suites-cara">Suites caractère</a>
+                    <a href="accom.html#suites-sign">Suites signature</a>
                 </div>
                 <a onclick="GallerySelect()">Galerie</a>
                 <div class="nav-gallery">
-                    <a href="pages/gallery.html#ringlet">Philippe Ringlet</a>
-                    <a href="pages/gallery.html#rovedo">Elisabeth Rovedo</a>
-                    <a href="pages/gallery.html#alonso">Alfredo Alonso</a>
+                    <a href="#ringlet">Philippe Ringlet</a>
+                    <a href="#rovedo">Elisabeth Rovedo</a>
+                    <a href="#alonso">Alfredo Alonso</a>
                 </div>
-                <a class="one-choice" href="pages/resto.html" onclick="RestoSelect()">Restaurant</a>
-                <a class="one-choice" href="pages/activity.html" onclick="AcititySelect()">Activités</a>
+                <a class="one-choice" href="resto.html" onclick="RestoSelect()">Restaurant</a>
+                <a class="one-choice active" href="#" onclick="ActivitySelect()">Activités</a>
             </div>
         </div>
         <div class="menu-bg" onclick="MenuSwitch()"></div>
     </div>
-    <div class="main-container">
-        <section class="home">
-            <div class="text">
-                <h1>Le Hameau des Baux</h1>
-                <h3>5 étoiles & une âme</h3>
-            </div>
-        </section>
-        <section class="table" id="table">
-            <div class="text">
-                <h1>Cicada</h1>
-                <h3>La table du Hameau</h3>
-                <p>
-                    La table étoilée du Hameau vous invite à vivre l’expérience d’un repas gastronomique naturel et
-                    inventif, composé à partir de la fine fleur des produits locaux. L’assiette de Cicada signée
-                    Christophe Chiavola, toute en fraicheur et contrastes, propose un voyage culinaire ouvert aux
-                    inspirations du monde, toujours en harmonie avec son environnement. Dans son écrin provençal au
-                    décor contemporain ou sur sa terrasse avec vue sur la plaine de la Crau, Cicada, la Table du Hameau,
-                    vous accueille pour le dîner du mardi au samedi entre 19h30 et 21h30.
-                </p>
-            </div>
-            <div class="pics">
-                <img src="ressources/table1.png">
-                <img src="ressources/table2.png">
-            </div>
-            <div id="galerie"></div>
-        </section>
-        <section class="galerie">
-            <div class="title">
-                <h1>Galerie</h1>
-                <h3>L'art sous toutes ses formes</h3>
-            </div>
-            <div class="pics">
-                <img src="ressources/galerie1.png">
-                <img src="ressources/galerie2.png">
-                <img src="ressources/galerie3.png">
-            </div>
-            <div class="text">
-                <p>
-                    Lieu de vie et de culture, le Hameau s’engage pour la création en exposant les œuvres d’artistes
-                    émergents ou confirmés sur ses murs. Toujours dans un parti-pris de découverte, la sélection est mue
-                    par la rencontre, le discours, la passion...
-                </p>
-            </div>
-            <div id="comptoir"></div>
-        </section>
-        <section class="comptoir">
-            <div class="pics">
-                <img src="ressources/comptoir3.png">
-            </div>
-            <div class="text">
-                <h1>Comptoir</h1>
-                <h3>Shopping au Hameau</h3>
-                <p>Bijoux, fragrances ou accessoires mode pour elle et lui, déco à petits prix ou mobilier design,
-                    jouets pour les plus petits ou objets d'art pour les plus grands, sans oublier notre coin librairie
-                    Actes Sud... Nous avons minutieusement sélectionné pour vous des plaisirs accessibles ou plus
-                    exclusifs. Clients hébergés ou visiteurs d'un jour, en décembre, profitez de 20% de réduction sur
-                    toute la boutique.</p>
-            </div>
-        </section>
-        <section class="camion" id="camion">
-            <div class="text">
-                <h1>Food Truck</h1>
-                <h3>Le camion bleu du Hameau</h3>
-                <p>Envie d’un diner sous les platanes ? De grignoter autour d’une partie de pétanque ? Le Camion Bleu,
-                    le food truck du Hameau, vous accueille tout l’été du vendredi au mardi de 19h30 à 22h00 pour dîner
-                    en toute décontraction. La cuisine ensoleillée, simple et généreuse, fait la part belle à la
-                    rôtisserie dans une carte gourmande qui invite au partage et comble les petites faims comme les gros
-                    appétits. Certains soirs, la place du Hameau se transforme en piste de danse ou scène musicale.</p>
-            </div>
-            <div class="pics">
-                <img src="ressources/camion.png">
-            </div>
-        </section>
-    </div>
+
     <footer id="footer">
         <div class="container">
             <div class="top-container">
@@ -203,10 +128,10 @@
                 </div>
                 <div class="leHameau">
                     <h1>Le Hameau</h1>
-                    <a href="#table">La table du Hameau</a>
-                    <a href="#galerie">La galerie du Hameau</a>
-                    <a href="#comptoir">Le comptoir du Hameau</a>
-                    <a href="#camion">Le camion du Hameau</a>
+                    <a href="../index.html#table">La table du Hameau</a>
+                    <a href="../index.html#galerie">La galerie du Hameau</a>
+                    <a href="../index.html#comptoir">Le comptoir du Hameau</a>
+                    <a href="../index.html#camion">Le camion du Hameau</a>
                 </div>
             </div>
             <hr>
@@ -227,6 +152,6 @@
     </footer>
 </body>
 
-<script src="script/script.js"></script>
+<script src="../script/script.js"></script>
 
 </html>
